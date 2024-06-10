@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": {
+            "en": "Sample News Title 1",
+            "tr": "Örnek Haber Başlığı 1"
+        },
+        "content": {
+            "en": "This is the content of the first sample news.",
+            "tr": "Bu, ilk örnek haberin içeriğidir."
+        },
+        "author": "John Doe",
+        "date": "2024-06-09T15:00:00",
+        "image": "path/to/image1.jpg"
+    },
+    {
+        "id": 2,
+        "title": {
+            "en": "Sample News Title 2",
+            "tr": "Örnek Haber Başlığı 2"
+        },
+        "content": {
+            "en": "This is the content of the second sample news.",
+            "tr": "Bu, ikinci örnek haberin içeriğidir."
+        },
+        "author": "Jane Doe",
+        "date": "2024-06-10T15:00:00",
+        "image": "path/to/image2.jpg"
+    }
+]

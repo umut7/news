@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">msn</div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+            </div>
+            <div class="language">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
+            <button id="loginButton">Login</button>
+            <button id="notificationsButton">Notifications</button>
+        </div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="#">Spor</a></li>
+                <li><a href="#">Finans</a></li>
+                <li><a href="#">Haber</a></li>
+                <li><a href="#">Eğlence</a></li>
+                <li><a href="#">Astroloji</a></li>
+                <li><a href="#">Otomobil</a></li>
+                <li><a href="#">Yaşam</a></li>
+                <li><a href="#">Hava Durumu</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Alışveriş</a></li>
+                <li><a href="#">Günlük Oyunlar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="newsDetail">
+        <!-- Haber detayları burada görüntülenecek -->
+    </main>
+    <footer>
+        2024 Microsoft | Gizlilik ve Tanımlama Bilgileri | Kullanım Koşulları
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsDetail = document.getElementById('newsDetail');
+            const languageSelect = document.getElementById('languageSelect');
+
+            const selectedNews = JSON.parse(localStorage.getItem('selectedNews'));
+
+            if (selectedNews) {
+                displayNewsDetail(selectedNews, languageSelect.value);
+            }
+
+            languageSelect.addEventListener('change', function() {
+                displayNewsDetail(selectedNews, languageSelect.value);
+            });
+
+            function displayNewsDetail(news, language) {
+                newsDetail.innerHTML = `
+                    <h1>${news.title[language]}</h1>
+                    <img src="${news.image}" alt="${news.title[language]}">
+                    <p>${news.content[language]}</p>
+                    <p><strong>${news.author}</strong> - ${news.date}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

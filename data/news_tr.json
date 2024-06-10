@@ -1,0 +1,35 @@
+{
+    "tr": [
+      {
+        "title": "Örnek Haber Başlığı 1",
+        "content": "Bu, birinci örnek haberin içeriğidir.",
+        "author": "John Doe",
+        "date": "09.06.2024 15:00:00",
+        "image": "path/to/image1.jpg"
+      },
+      {
+        "title": "Örnek Haber Başlığı 2",
+        "content": "Bu, ikinci örnek haberin içeriğidir.",
+        "author": "Jane Doe",
+        "date": "10.06.2024 15:00:00",
+        "image": "path/to/image2.jpg"
+      }
+    ],
+    "en": [
+      {
+        "title": "Sample News Title 1",
+        "content": "This is the content of the first sample news.",
+        "author": "John Smith",
+        "date": "09.06.2024 15:00:00",
+        "image": "path/to/image1.jpg"
+      },
+      {
+        "title": "Sample News Title 2",
+        "content": "This is the content of the second sample news.",
+        "author": "Jane Smith",
+        "date": "10.06.2024 15:00:00",
+        "image": "path/to/image2.jpg"
+      }
+    ]
+  }
+  
