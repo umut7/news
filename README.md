@@ -1,6 +1,6 @@
 Web Development Course Final Project
 This is my final project for MSN News Website Clone
------link
+this is the video of me explaining the website: https://drive.google.com/file/d/1xTT6lAEgSA35Tp4xN8RBGycrYhd9gbNa/view?usp=sharing
 This is the link for the website: https://umut7.github.io/news/
 
 Features:
